@@ -48,9 +48,6 @@ export default function Navbar () {
         navigate(page)
     }
 
-    const handleMenu = () => {
-        setMenu(prev => !prev)
-    }
 
     const pagesHandling = (page) => {
         if(location.pathname == page) {
