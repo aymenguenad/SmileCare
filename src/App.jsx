@@ -44,7 +44,7 @@ function App() {
       {screenWidth.initial > 600 || screenWidth.change > 600  ? '' : <MyMenu />}
       <main>
         <Routes>
-          <Route path="/SmileCare/" element={<HomePage />}/>
+          <Route path="/" element={<HomePage />}/>
         </Routes>
       </main>
       <footer>
