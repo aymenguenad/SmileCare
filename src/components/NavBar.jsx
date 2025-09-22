@@ -73,9 +73,9 @@ export default function Navbar () {
                 { screenWidth.initial > 600 || screenWidth.change > 600 ? 
                 (
                 <>
-                <button onClick={()=>{redirection('/SmileCare/')}} style={pagesHandling('/SmileCare/')}>Welcome</button>
-                <button onClick={()=>{redirection('/SmileCare/doctors')}} style={pagesHandling('/SmileCare/doctors')}>Meet The Doctors</button>
-                <button onClick={()=>{redirection('/SmileCare/aboutus')}} style={pagesHandling('/SmileCare/aboutus')}>About Us</button>
+                <button onClick={()=>{redirection('/')}} style={pagesHandling('/')}>Welcome</button>
+                <button onClick={()=>{redirection('/doctors')}} style={pagesHandling('/doctors')}>Meet The Doctors</button>
+                <button onClick={()=>{redirection('/aboutus')}} style={pagesHandling('/aboutus')}>About Us</button>
                 <button id='nbBook'>Appointment</button>
                 </>
                 ) : 
