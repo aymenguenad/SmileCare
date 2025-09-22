@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Navbar from "./components/NavBar"
 import HomePage from "./Pages/HomePage"
 import MyMenu from "./components/homepage/Menu"
+import NotFound from "./Pages/404"
 
 function App() {
     const [screenWidth, setScreenWidth] = useState({
