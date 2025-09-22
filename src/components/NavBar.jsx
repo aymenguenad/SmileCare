@@ -60,7 +60,7 @@ export default function Navbar () {
 
     return (
         <>  
-            <div onClick={()=>{redirection('/')}} className='logoBox'>
+            <div onClick={()=>{redirection('/SmileCare/')}} className='logoBox'>
                 <motion.img initial={{opacity: 0.9}} animate={{scale: hovered ? 1.1 : 1, opacity: 1 }} exit={{opacity: 0.9}}
                 transition={{duration: 0.3, ease: "easeInOut"}} className='logo'  src={hovered? secondLogo : Logo} alt="logo" 
                 onMouseEnter={()=>{setHoverd(true)}} onMouseLeave={()=>{setHoverd(false)}}
@@ -73,9 +73,9 @@ export default function Navbar () {
                 { screenWidth.initial > 600 || screenWidth.change > 600 ? 
                 (
                 <>
-                <button  onClick={()=>{redirection('/')}} style={pagesHandling('/')}>Welcome</button>
-                <button style={pagesHandling('/doctors')}>Meet The Doctors</button>
-                <button onClick={handleMenu} style={{color: open? '#4DA6FF' : 'black'}}>About Us</button>
+                <button onClick={()=>{redirection('/SmileCare/')}} style={pagesHandling('/SmileCare/')}>Welcome</button>
+                <button onClick={()=>{redirection('/SmileCare/doctors')}} style={pagesHandling('/SmileCare/doctors')}>Meet The Doctors</button>
+                <button onClick={()=>{redirection('/SmileCare/aboutus')}} style={pagesHandling('/SmileCare/aboutus')}>About Us</button>
                 <button id='nbBook'>Appointment</button>
                 </>
                 ) : 

@@ -32,7 +32,7 @@ export default function MyMenu (){
     }, [window.innerWidth])
 
     return (
-        <div style={{top: open? '18%' : '-20%'}} className='menuSlide'>
+        <div style={{top: open? '18%' : '-50%'}} className='menuSlide'>
             <a href=""> Welcome </a>
             <a href=""> Meet The Doctors </a>
             <a href=""> About us </a>

@@ -71,13 +71,13 @@
   }
 
   .heroSection {
-    height: 50vh;
+    height: 80vh;
   }
 
   .cta {
     position: absolute;
+    height: 80vh;
     top: 0%;
-    height: 50vh;
     left: 0%;
     width: 100%;
     padding: 0;
