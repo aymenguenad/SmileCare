@@ -106,7 +106,7 @@ export default function Questions () {
                 <textarea name="message" id="mesage" placeholder="Message"></textarea>
                 <button type='submit'>Submit</button>
             </motion.form>
-            <motion.div initial= {{opacity: 0}} animate={{opacity: show.elements ? 1 : 0}} transition={{duration: 0.3, ease: 'easeInOut', delay: 0.6}}>
+            <motion.div className='qfDirections' initial= {{opacity: 0}} animate={{opacity: show.elements ? 1 : 0}} transition={{duration: 0.3, ease: 'easeInOut', delay: 0.6}}>
                 <p>Have questions or feedback? We’d love to hear from you. Call our office directly or use the quick contact form below to get in touch.</p>
                 <a href="https://www.google.com/maps?q=39.7392,-104.9903" target="_blank" rel="noopener noreferrer"> 1234 Main Street, Denver, CO </a>
                 <a href="tel:+1234567890" className="mobile-only">+1 (234) 567-890</a>
