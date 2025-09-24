@@ -41,7 +41,7 @@ function App() {
       <nav>
         <Navbar />
       </nav>
-      {screenWidth.initial > 600 || screenWidth.change > 600  ? '' : <MyMenu />}
+      {screenWidth.initial > 1024 || screenWidth.change > 1024  ? '' : <MyMenu />}
       <main>
         <Routes>
           <Route path="/smilecare/" element={<HomePage />}/>

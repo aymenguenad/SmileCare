@@ -1,3 +1,385 @@
+
+@media (max-width: 1024px) {
+
+  .logoBox h1 {
+    font-size: 60px;
+  }
+
+  .logoBox {
+    width: 50%;
+    gap: 7px;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .myMenu {
+    width: 40%;
+    height: auto;
+  }
+
+  .logoBox span {
+    display: none;
+  }
+
+
+  .pages button {
+    font-size: 50px;
+  }
+
+  .pages {
+    width: 50%;
+  }
+
+  .menuSlide {
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 30vh;
+    padding: 40px;
+    right: 0%;
+    top: 18%;
+    opacity: 1;
+    gap: 30px;
+    display: flex;
+    justify-content: first baseline;
+    align-items: baseline;
+    flex-direction: column;
+    transition: top 0.1s ease-in-out ;
+  }
+  
+  .menuSlide a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+  }
+
+  .menuSlide a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+
+  /* MENU DONE */
+  /* MENU DONE */
+  /* MENU DONE */
+  /* MENU DONE */
+  /* MENU DONE */
+
+
+    main {
+    z-index: 0;
+    max-width: 1024px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .heroSection {
+    height: 80vh;
+  }
+
+  .cta {
+    position: absolute;
+    height: 80vh;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+    border-radius: 0px ;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .cta div {
+    width: 90%;
+    margin: 0;
+    align-items: center;
+    font-size: 5vw;
+  }
+
+  .cta div h2 {
+    font-family: "DM Serif Text", serif;
+    font-size: 7.5vw;
+  }
+
+  .cta button {
+    font-family: "DM Serif Text", serif;
+    font-size: 6vw;
+  }
+
+
+  .servicesSection {
+    height: 100vh;
+  }
+
+  .ssBoxContainer {
+    width: 100%;
+    height: 90%;
+    padding: 0;
+  }
+
+  .ssBoxContainer div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ssBoxContainer h1, p, h2, h3 {
+        width: 90%;
+        font-size: 3.6vw;
+  }
+
+  #ssImg {
+    object-fit: cover;
+    align-self: center;
+    width: 100%;
+  }
+
+  .testimonials {
+    width: 95%;
+    height: auto;
+  }
+
+  .testimonialText {
+    font-size: 3.5vw;
+  }
+
+  .testimonialsBox {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card {
+    width: 70%;
+    height: auto;
+  }
+
+  .questionForm {
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    height: 100vh;
+
+    flex-direction: column;
+  }
+
+  #qfImg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+    z-index: -1;
+  }
+
+  .questionForm form {
+    width: 70%;
+    height: 40%;
+    margin: 50px 0px 10px 0px;
+  }
+
+  .questionForm div {
+    width: 60%;
+    height: 40%;
+    padding: 0px 50px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .qfDirections a {
+    font-size: 3.5vw;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .logoBox h1 {
+    font-size: 30px;
+  }
+
+  .logoBox {
+    width: 50%;
+    gap: 7px;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .logoBox span {
+    display: none;
+  }
+
+
+  .pages button {
+    font-size: 15px;
+  }
+
+  .pages {
+    width: 50%;
+  }
+
+  .menuSlide {
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 30vh;
+    padding: 40px;
+    right: 0%;
+    top: 18%;
+    opacity: 1;
+    gap: 30px;
+    display: flex;
+    justify-content: first baseline;
+    align-items: baseline;
+    flex-direction: column;
+    transition: top 0.1s ease-in-out ;
+  }
+  
+  .menuSlide a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+  }
+
+  .menuSlide a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+
+  /* MENU DONE */
+  /* MENU DONE */
+  /* MENU DONE */
+  /* MENU DONE */
+  /* MENU DONE */
+
+
+    main {
+    z-index: 0;
+    max-width: 768px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .heroSection {
+    height: 80vh;
+  }
+
+  .cta {
+    position: absolute;
+    height: 80vh;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+    border-radius: 0px ;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .cta div {
+    width: 90%;
+    margin: 0;
+    align-items: center;
+    font-size: 5vw;
+  }
+
+  .cta div h2 {
+    font-family: "DM Serif Text", serif;
+    font-size: 7.5vw;
+  }
+
+  .cta button {
+    font-family: "DM Serif Text", serif;
+    font-size: 6vw;
+  }
+
+
+  .servicesSection {
+    height: 100vh;
+  }
+
+  .ssBoxContainer {
+    width: 100%;
+    height: 90%;
+    padding: 0;
+  }
+
+  .ssBoxContainer div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ssBoxContainer h1, p, h2, h3 {
+        width: 90%;
+        font-size: 3.6vw;
+  }
+
+  #ssImg {
+    object-fit: cover;
+    align-self: center;
+    width: 100%;
+  }
+
+  .testimonials {
+    width: 95%;
+    height: auto;
+  }
+
+  .testimonialText {
+    font-size: 3.5vw;
+  }
+
+  .testimonialsBox {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card {
+    width: 70%;
+    height: auto;
+  }
+
+  .questionForm {
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    height: 150vh;
+
+    flex-direction: column;
+  }
+
+  #qfImg {
+    width: 100%;
+    height: 150vh;
+    object-fit: cover;
+
+    z-index: -1;
+  }
+
+  .questionForm form {
+    width: 70%;
+    height: 50%;
+    margin: 50px 0px 10px 0px;
+  }
+
+  .questionForm div {
+    width: 60%;
+    height: 30%;
+    padding: 0px 50px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .qfDirections a {
+    font-size: 3.5vw;
+  }
+
+}
+
+
 @media (max-width: 600px) {
 
   .logoBox h1 {

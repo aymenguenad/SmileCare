@@ -67,7 +67,7 @@ export default function Navbar () {
             </div>
             
             <div className='pages'>
-                { screenWidth.initial > 600 || screenWidth.change > 600 ? 
+                { screenWidth.initial > 1024 || screenWidth.change > 1024 ? 
                 (
                 <>
                 <button onClick={()=>{redirection('/smilecare/')}} style={pagesHandling('/smilecare/')}>Welcome</button>
