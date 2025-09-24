@@ -5,6 +5,7 @@ import Navbar from "./components/NavBar"
 import HomePage from "./Pages/HomePage"
 import MyMenu from "./components/homepage/Menu"
 import NotFound from "./Pages/404"
+import MeetTheDoctors from "./Pages/MeetTheDoctors"
 
 function App() {
     const [screenWidth, setScreenWidth] = useState({
@@ -45,6 +46,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/smilecare/" element={<HomePage />}/>
+          <Route path="/smilecare/doctors" element={<MeetTheDoctors />}/>
         </Routes>
       </main>
       <footer>

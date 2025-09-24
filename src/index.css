@@ -66,7 +66,7 @@ nav {
   width: auto;
   border: none;
   background-color: transparent;
-  font-size: 19px;
+  font-size: 1.5vw;
   border-bottom: none ;
   transition: border-bottom ease-in-out 0.1s, color 0.1s ease-in-out, transform 0.2s ease-in-out;
 }
@@ -401,6 +401,72 @@ main {
 }
 
 
+.doctorsPage {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(243, 243, 243, 0.3);
+}
+
+.doctorsPage > p {
+  font-size: 4vw;
+  align-self: baseline;
+  margin: 20px;
+}
+
+.cardsDisplay {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.docCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  gap: 40px;
+}
+
+#docPicture{
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 2/3;
+}
+
+.docInfo {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  text-align: justify;
+  gap: 20px;
+}
+
+.docInfo h1, p {
+  width: 90%;
+}
+
+  hr {
+  gap: 20px;
+  margin: 20px;
+  border-color: rgb(242, 242, 242);
+  width: 500px;
+  justify-self: center;
+  
+}
+
+
 
 footer {
   width: 100%;
@@ -420,3 +486,4 @@ footer {
   align-items: center;
   font-size: 5vw;
 }
+
