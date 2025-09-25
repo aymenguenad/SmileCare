@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 export default function Appointement () {
     const [isAClient, setClient]= useState(true)
+    const [popUp, setPopUp]= useState(false)
     const refYes = useRef()
     const refNo = useRef()
 
@@ -32,6 +33,19 @@ export default function Appointement () {
 
         
     },[])
+
+    useEffect(()=>{
+        if(popUp){
+        setTimeout(()=>{
+            setPopUp(false)
+        },5000)
+        }
+
+    },[popUp])
+
+    const handlePopUp = () => {
+        setPopUp(true)
+    }
 
 
     return (
@@ -130,8 +144,17 @@ export default function Appointement () {
             <p className="pToEdit"> Please describe the nature of your appointment?</p>
             <textarea name="appointmentDescription" className="appointmentDescription"></textarea>
             <p >Note: Messages sent using this form are not considered private. Please contact our office by telephone if sending highly confidential or private information.</p>
-            <button className="formSubmit">Submit Request</button>
+            <button onClick={handlePopUp} type="button" className="formSubmit">Submit Request</button>
             </form>
+            <AnimatePresence mode="wait">
+                {popUp && 
+                    <motion.div 
+                    initial={{opacity: 0, y: '-10%'}} animate={{opacity: 1, y: '0%'}} transition={{duration: 0.5}} exit={{opacity: 0, y: '-10%'}}
+                    className="popUp">
+                        An email will be sent to you soon with further details
+                    </motion.div>
+                }
+            </AnimatePresence>
         </div>
     )
 }

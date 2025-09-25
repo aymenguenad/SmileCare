@@ -54,7 +54,9 @@ function App() {
         </Routes>
       </main>
       <footer>
-
+        <p>© 2025 SmileCare Dental. All rights reserved.  
+        Dedicated to providing exceptional dental care for every smile, every age.  
+        Visit us at [Your Address] | Call us at (xxx) xxx-xxxx | Email: contact@smilecare.com</p>
       </footer>
     </BrowserRouter>
     </>
