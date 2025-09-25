@@ -36,7 +36,7 @@ export default function MyMenu (){
             <a href="/smilecare/"> Welcome </a>
             <a href="/smilecare/doctors"> Meet The Doctors </a>
             <a href="/smilecare/aboutus"> About us </a>
-            <a href=""> Appointement request </a>
+            <a href="/smilecare/appointment"> Appointement request </a>
         </div>
     )
 }

@@ -130,6 +130,7 @@ export default function Appointement () {
             <p className="pToEdit"> Please describe the nature of your appointment?</p>
             <textarea name="appointmentDescription" className="appointmentDescription"></textarea>
             <p >Note: Messages sent using this form are not considered private. Please contact our office by telephone if sending highly confidential or private information.</p>
+            <button className="formSubmit">Submit Request</button>
             </form>
         </div>
     )
