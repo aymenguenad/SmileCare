@@ -51,7 +51,7 @@ export default function Navbar () {
 
     const pagesHandling = (page) => {
         if(location.pathname == page) {
-            return {color:' #4DA6FF', transform: screenWidth == 'phoneSize'? 'scale(1.2)' : 'scale(1.5)'}
+            return {color:' #4DA6FF', transform: screenWidth == 'phoneSize'? 'scale(1.2)' : 'scale(1.2)'}
         }
     }
 

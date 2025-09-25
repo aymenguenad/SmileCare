@@ -33,9 +33,9 @@ export default function MyMenu (){
 
     return (
         <div style={{top: open? '18%' : '-50%'}} className='menuSlide'>
-            <a href=""> Welcome </a>
-            <a href=""> Meet The Doctors </a>
-            <a href=""> About us </a>
+            <a href="/smilecare/"> Welcome </a>
+            <a href="/smilecare/doctors"> Meet The Doctors </a>
+            <a href="/smilecare/aboutus"> About us </a>
             <a href=""> Appointement request </a>
         </div>
     )
