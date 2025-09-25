@@ -1,12 +1,25 @@
 import dentist from '../../assets/pexels-fr3nks-305568.jpg'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { usePopUpState } from '../../utils/zustands'
 
 export default function Questions () {
     const [show, setShow]= useState({
         section: false, 
         elements: false
     })
+
+    const {messageConfirmation, setMcTrue, setMcFalse} = usePopUpState()
+
+    useEffect(()=>{
+        if(messageConfirmation){
+            setTimeout(()=>{
+                setMcFalse()
+            },5000)
+        }
+
+    },[messageConfirmation])
+
 
     const [screenWidth, setScreenWidth] = useState({
         initial: null,
@@ -88,6 +101,10 @@ export default function Questions () {
     }
     }
 
+    const handleSubmit = () => {
+        setMcTrue()
+    }
+
     useEffect(()=>{
 
         window.addEventListener('scroll', handleScroll)
@@ -104,7 +121,7 @@ export default function Questions () {
                 <input type="tel" placeholder="Phone number"/>
                 <input type="text" placeholder="Email"/>
                 <textarea name="message" id="mesage" placeholder="Message"></textarea>
-                <button type='submit'>Submit</button>
+                <button onClick={handleSubmit} type='button'>Submit</button>
             </motion.form>
             <motion.div className='qfDirections' initial= {{opacity: 0}} animate={{opacity: show.elements ? 1 : 0}} transition={{duration: 0.3, ease: 'easeInOut', delay: 0.6}}>
                 <p>Have questions or feedback? We’d love to hear from you. Call our office directly or use the quick contact form below to get in touch.</p>

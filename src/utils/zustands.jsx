@@ -5,3 +5,14 @@ export const useMenuState = create ((set)=>({
     toggleMenu : () => set((state) => ({open: !state.open}))
 }))
 
+export const usePopUpState = create ((set)=>({
+    appointmentConfirmation: false,
+    messageConfirmation: false,
+
+    setAcTrue : () => set(()=>({appointmentConfirmation: true})),
+    setAcFalse : () => set(()=>({appointmentConfirmation: false})),
+
+    setMcTrue : () => set(()=>({messageConfirmation: true})),
+    setMcFalse : () => set(()=>({messageConfirmation: false})),
+
+}))

@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { useState, useEffect } from "react"
 
+import { usePopUpState } from "./utils/zustands"
+
 import Navbar from "./components/NavBar"
 import HomePage from "./Pages/HomePage"
 import MyMenu from "./components/homepage/Menu"
@@ -8,6 +10,7 @@ import NotFound from "./Pages/404"
 import MeetTheDoctors from "./Pages/MeetTheDoctors"
 import AboutUs from "./Pages/AboutUs"
 import Appointement from "./Pages/Appointment"
+import PopUp from "./components/popUp"
 
 function App() {
     const [screenWidth, setScreenWidth] = useState({
@@ -38,8 +41,16 @@ function App() {
 
     }, [window.innerWidth])
 
+    const {appointmentConfirmation, messageConfirmation } = usePopUpState()
+
   return (
     <>
+      {appointmentConfirmation && 
+      <PopUp text={'Appointment request successfuly sent, further details will be sent back to you'}/>
+      }
+      
+      {messageConfirmation && 
+      <PopUp text={`Your message was successfuly sent`} />}
     <BrowserRouter>
       <nav>
         <Navbar />
