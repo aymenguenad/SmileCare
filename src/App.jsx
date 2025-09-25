@@ -7,6 +7,7 @@ import MyMenu from "./components/homepage/Menu"
 import NotFound from "./Pages/404"
 import MeetTheDoctors from "./Pages/MeetTheDoctors"
 import AboutUs from "./Pages/AboutUs"
+import Appointement from "./Pages/Appointment"
 
 function App() {
     const [screenWidth, setScreenWidth] = useState({
@@ -49,6 +50,7 @@ function App() {
           <Route path="/smilecare/" element={<HomePage />}/>
           <Route path="/smilecare/doctors" element={<MeetTheDoctors />}/>
           <Route path="/smilecare/aboutus" element={<AboutUs />}/>
+          <Route path="/smilecare/appointment" element={<Appointement />}/>
         </Routes>
       </main>
       <footer>

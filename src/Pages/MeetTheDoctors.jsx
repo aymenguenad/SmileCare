@@ -1,5 +1,5 @@
 import DoctorCard from "../components/MeetTheDoctors.jsx/DoctorCard"
-
+import { motion } from "framer-motion"
 import doctorJones from '../assets/doctorJones.jpg'
 import doctorMeyers from '../assets/DoctorMeyers.png'
 import doctorLebel from '../assets/ai-generated-9019518_1280.png'
@@ -25,7 +25,9 @@ export default function MeetTheDoctors () {
     ]
 
     return (
-        <div className="doctorsPage">
+        <motion.div 
+        initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}}
+        className="doctorsPage">
             <p style={{color: '#4DA6FF'}}>Meet The Doctors </p>
             <div className="cardsDisplay">
                 {doctorsInfo.map((e, i)=>{
@@ -37,6 +39,6 @@ export default function MeetTheDoctors () {
                     )
                 })}
             </div>
-        </div>
+        </motion.div>
     )
 }

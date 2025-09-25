@@ -1,6 +1,10 @@
+import { motion } from "framer-motion"
+
 export default function AboutUs () {
     return (
-        <div className="aboutUs">
+        <motion.div 
+        initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}}
+        className="aboutUs">
             <h2>About us</h2>
             <p>At SmileCare, our mission is to combine modern innovation with compassionate care to create smiles that are as healthy as they are beautiful. We are dedicated to providing personalized dental services that prioritize comfort, precision, and long-lasting results.</p>
             
@@ -25,6 +29,6 @@ export default function AboutUs () {
                 <p>We know that visiting the dentist can sometimes cause anxiety. That’s why we strive to create a welcoming atmosphere where every patient feels at ease. Building trust and treating each person with respect is the foundation of our practice. Our friendly staff works to ensure your visits are comfortable, stress-free, and even enjoyable.</p>
                 <p>We’re honored to be a part of your journey toward better oral health — and we look forward to giving you many more reasons to smile.</p>
             </div>
-        </div>  
+        </motion.div>  
     )
 }

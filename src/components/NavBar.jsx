@@ -73,7 +73,7 @@ export default function Navbar () {
                 <button onClick={()=>{redirection('/smilecare/')}} style={pagesHandling('/smilecare/')}>Welcome</button>
                 <button onClick={()=>{redirection('/smilecare/doctors')}} style={pagesHandling('/smilecare/doctors')}>Meet The Doctors</button>
                 <button onClick={()=>{redirection('/smilecare/aboutus')}} style={pagesHandling('/smilecare/aboutus')}>About Us</button>
-                <button id='nbBook'>Appointment</button>
+                <button onClick={()=>{redirection('/smilecare/appointment')}} id='nbBook'>Appointment</button>
                 </>
                 ) : 
                 (
